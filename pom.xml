@@ -14,13 +14,11 @@
         <finalName>static-site</finalName>
 
         <plugins>
-            <!-- ✅ WAR plugin FIX -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version>
                 <configuration>
-                    <!-- 🔥 Important line -->
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
